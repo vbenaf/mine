@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    position: relative;
+    padding: 40px;
+    background-color: white;
+}
+
+.header>ul {
+    text-align: right;
+}
+
+.header>ul>li {
+    display: inline;
+    margin: 80px;
+}
+
+.header>ul>li>a {
+    color: black;
+    text-decoration: none;
+}
+
+.online_store {
+    background-color: rgb(207, 46, 46);
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.header>ul>li>a.online {
+    color: white;
+}
+
+.icon {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+}
+
+.menu-active {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+    display: none;
+    cursor: pointer;
+}
+
+.nav-active {
+    background-color: rgb(61, 58, 58);
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+.nav-active>ul>li {
+    list-style-type: none;
+    margin: 30px;
+}
+
+.nav-active>ul>li>a {
+    color: white;
+    text-decoration: none;
+}
+.footer {
+    background-color: rgb(59, 53, 53);
+    padding: 9px;
+    color: white;
+    text-align: center;
+}
+.panels{
+    margin:50px;
+    display: flexbox;
+    text-align: center;
+}
+.p{
+    position: relative;
+    width:200px;
+    padding:20px;
+    margin:20px;
+    display: inline-block;
+    text-align: justify;
+    background-color: rgb(238, 231, 128);
+}
+.p>.title{
+    text-align: center;
+    margin-bottom: 10%;
+    border-bottom: 1px solid grey;
+}
+.content>p{
+    margin-top:20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.bottom{
+    position: absolute;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:25px;
+    top:100%;
+    left:0px;
+    transform: translate(0%,-100%);
+    width:100%;
+    background-color: rgb(117, 54, 54);
+    color:white;
+    text-align: center;
+}
+
+/*MEDIA QUERYS*/
+
+@media only screen and (max-width:798px) {
+    .header>ul {
+        display: none;
+    }
+
+    .menu-active {
+        display: block;
+    }
+
+    .icon>img {
+        width: 60px;
+    }
+}
+
+@media only screen and (min-width:799px) {
+    .nav-active{
+        display:none;
+    }
+}
+
+/*DISPLAY NAV-ACTIVE*/
+.display {
+    display: block;
+}
