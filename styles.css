@@ -159,7 +159,6 @@ body {
     letter-spacing: 5px;
     outline:none;
     text-align: center;
-    margin-left:10px;
 }
 
 .singup>.logTitle {
@@ -178,7 +177,6 @@ body {
     letter-spacing: 5px;
     outline:none;
     text-align: center;
-    margin-left:-60px;
 }
 input::placeholder{
     color:white;
